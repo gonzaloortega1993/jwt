@@ -8,9 +8,6 @@ from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer, UserSerializer
 from snippets.permissions import IsOwnerOrReadOnly
 
-from djoser.conf import settings
-from djoser import constants, utils
-
 
 @api_view(['GET'])
 def api_root(request, format=None):
